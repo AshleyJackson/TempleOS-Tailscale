@@ -1,6 +1,6 @@
 # 0006. Tailscale integration strategy: phased WireGuard-first, join the tailnet as an external WireGuard peer
 
-- **Status:** proposed
+- **Status:** accepted (Phase 0 scaffolding landed 2026-11-06)
 - **Date:** 2026-11-06
 
 ## Context

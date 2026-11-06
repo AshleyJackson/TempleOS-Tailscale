@@ -9,9 +9,10 @@
 - **This fork:** named `TempleOS-Tailscale` because its purpose is to add
   **Tailscale/WireGuard networking** to an OS that was deliberately designed *without*
   any networking (see [ADR-0005](adr/0005-no-networking-baseline.md) and
-  [ADR-0006](adr/0006-tailscale-integration-strategy.md)). As of this writing, **no
-  Tailscale code exists in the tree yet** — it is a pristine baseline. The networking
-  gap analysis and work breakdown are in [12-networking-gap-analysis.md](12-networking-gap-analysis.md).
+  [ADR-0006](adr/0006-tailscale-integration-strategy.md)). Phase 0 scaffolding has
+  landed under `Kernel/Net/` (device registry, net task skeleton, NIC driver stubs)
+  and `Kernel/Crypto/` (interface stubs); the networking gap analysis, phase status
+  and work breakdown are in [12-networking-gap-analysis.md](12-networking-gap-analysis.md).
 
 ## Key facts about the upstream system
 

@@ -94,5 +94,12 @@ boot-time availability is ever needed. (Recorded in ADR-0006.)
 | **3 — WireGuard** | Crypto primitives with in-OS unit tests against RFC 7748 / RFC 8439 test vectors; WG handshake + data path between two TempleOS nodes (manual key exchange via file) | Two TempleOS VMs form a WG tunnel; throughput/loss sanity check; all RFC vectors pass |
 | **4 — Tailnet membership** | Node added to an existing tailnet as an **external WireGuard peer** from another node; `Apps/Tailscale` status/config UI; persistent keys in registry | TempleOS node reachable by tailnet IP from other members; survives reboot with stored config |
 
+**Status (2026-11-06):** Phase 0 complete — `Kernel/Net` + `Kernel/Crypto`
+skeletons landed (`CNetDev` device registry, net task with poll/yield loop and
+message pump, NE2000 register map + driver stubs, ARP/IP4/UDP interface stubs,
+crypto interface stubs), config/key storage format fixed in
+[net-config.md](net-config.md), and the exit test lives at
+`Demo/Net/NetSelfTest.HC`. ADR-0006 is accepted.
+
 Deferred (out of scope for now): IPv6, Tailscale control-plane protocol (TLS), DERP
 relays, Funnel, TCP. Each would be a separate ADR if pursued.

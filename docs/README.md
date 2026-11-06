@@ -24,13 +24,14 @@ with the stated goal of adding **Tailscale networking** to it.
 | [09-applications-and-tools.md](09-applications-and-tools.md) | Catalog of `Apps/` and the `Adam/` developer tools (DolDoc editor, God, sprite editor, disk utilities…) |
 | [10-demos-and-lectures.md](10-demos-and-lectures.md) | Index of `Demo/` programs and `Demo/Lectures/` teaching material |
 | [11-build-test-distribute.md](11-build-test-distribute.md) | How the OS is built, tested (`OSTestSuite`) and distributed (custom ISOs, TOSZ Linux tool) |
-| [12-networking-gap-analysis.md](12-networking-gap-analysis.md) | **The point of this fork:** what exists today, what is missing for Tailscale, and the work breakdown |
+| [12-networking-gap-analysis.md](12-networking-gap-analysis.md) | **The point of this fork:** what exists today, what is missing for Tailscale, and the work breakdown (with phase status) |
+| [net-config.md](net-config.md) | Net stack config & key storage design (Phase 0 deliverable of ADR-0006) |
 
 ## Architecture Decision Records
 
 See [`adr/README.md`](adr/README.md). ADRs 0001–0005 document decisions already
-embodied in the upstream codebase (retroactive); **ADR-0006** is the forward-looking
-decision record for the Tailscale integration strategy.
+embodied in the upstream codebase (retroactive); **ADR-0006** is the decision record
+for the Tailscale integration strategy — accepted, with Phase 0 scaffolding landed.
 
 ## Relationship to `Doc/`
 

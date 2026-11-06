@@ -35,7 +35,7 @@ Numbering is sequential; ADRs are never deleted — they get superseded.
 | [0003](0003-redsea-native-filesystem.md) | RedSea as the native filesystem (contiguous files, bitmap allocation) | Accepted (retroactive — upstream) | Storage |
 | [0004](0004-least-common-denominator-hardware.md) | Least-common-denominator hardware support (ATA PIO, PS/2, VGA; no PCI DMA, no USB) | Accepted (retroactive — upstream) | Hardware drivers |
 | [0005](0005-no-networking-baseline.md) | No networking in the baseline OS | **Superseded by 0006** (upstream decision, re-opened by this fork) | Networking |
-| [0006](0006-tailscale-integration-strategy.md) | Tailscale integration strategy: phased WireGuard-first, join tailnet as external WG peer | **Proposed** | Networking (this fork) |
+| [0006](0006-tailscale-integration-strategy.md) | Tailscale integration strategy: phased WireGuard-first, join tailnet as external WG peer | **Accepted** (Phase 0 landed 2026-11-06) | Networking (this fork) |
 
 ## Conventions for new ADRs
 
